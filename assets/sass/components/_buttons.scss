@@ -1,0 +1,19 @@
+.button {
+    background-color: $nickel;
+    border-radius: 30px;
+    color: $white;
+  
+ 
+    &--small {
+      padding: 9px 16px;
+    }
+  
+    &--small {
+      font-size: $medium;
+  
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+  }
+  

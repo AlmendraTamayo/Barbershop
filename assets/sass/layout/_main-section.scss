@@ -1,0 +1,13 @@
+.main-section{
+    padding: $x-large $xx-large;
+
+    &__date{
+        font-family: $playfair-display;
+        padding-bottom: $x-large;
+    }
+    &__text{
+        font-weight: $light;
+        line-height: 2rem;
+        padding-bottom: 3.5rem;
+    }
+}

@@ -1,0 +1,29 @@
+
+.pagination-section {
+    border-radius: 0.25rem;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-left: 300px;
+  
+      
+    &__link {
+      background-color: $white;
+      border: 1px solid $light-gray;
+      color: $eeire-black;
+      display: block;
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 1.25;
+      margin-left: -1px;
+      padding: 0.5rem 0.75rem;
+      position: relative;
+  
+         }
+  
+    &__link:hover {
+      color: $nickel;
+      text-decoration: none;
+    }
+  }

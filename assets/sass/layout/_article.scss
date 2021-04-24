@@ -1,0 +1,46 @@
+.article {
+    padding: $x-large $xx-large;
+    text-align: left;
+    
+    &__image {
+      border-radius: 50%;
+      height: auto;
+      width: 150px;
+      display: inline-block;
+      margin-right: $x-large;
+     
+    }
+    &__info,  &__container, &__info--bio{
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+    &__info{
+        width: 20%;
+        &--name{
+            font-family: $playfair-display;
+            font-size: $x-large;
+            font-weight: $bold;
+            font-style: $italic;
+
+        }
+        &--rrss{
+            color: $ruddy-pink;
+            font-weight: $light;
+            vertical-align: middle;
+            
+        }
+        &--site{
+            color: $ruddy-pink;
+            font-weight: $light;
+            
+        }
+    }
+    &__info--bio{
+        width: 60%;
+        font-weight: $light;
+        line-height: 2rem;
+
+        
+    }
+}

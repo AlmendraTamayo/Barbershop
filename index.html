@@ -10,28 +10,137 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Barbershop</title>
+
 </head>
 
 <body>
-    <nav>
+    <!-- Nav bar desde Bootstrap -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation">
+            <a class="navbar-brand" href="#"><img class="navigation__logo" src="./assets/img/logo.png"
+                    alt="logo-barberia"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Horas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    </nav>
-    <header>
 
-    </header>
-    <main>
+        <header class="header">
 
-    </main>
-    <article>
+            <h1 class="header__tittle">5 formas de cuidar <br> tu corte de cabello</h1>
 
-    </article>
-    <section>
 
-    </section>
-    <footer>
+        </header>
+        <main class="main-section">
+            <p class="main-section__date">12 de abril de 2018</p>
+            <p class="main-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat
+                nunc quam, eget scelerisque quam semper quis. Mauris maximus blandit lorem, sit amet condimentum eros
+                auctor quis. In ut semper ipsum, nec condimentum est. Phasellus sodales, nunc vitae feugiat consequat,
+                turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu faucibus vel,
+                sollicitudin ut velit. </p>
 
-    </footer>
+            <p class="main-section__text"> Fusce dapibus turpis massa, nec pellentesque libero porttitor eu. Fusce vel
+                pellentesque augue. Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio,
+                aliquet non sapien vitae, scelerisque aliquam lorem. Suspendisse et sem tincidunt, tincidunt odio id,
+                varius enim. Vestibulum faucibus augue id fringilla vulputate. Sed vitae magna eu enim pellentesque
+                laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat.
+            </p>
+
+            <p class="main-section__text"> Suspendisse vel lobortis lectus, eu convallis mauris. Praesent id odio
+                imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget cursus nibh interdum tempus.
+                Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac
+                ullamcorper iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper
+                eleifend. </p>
+
+            <p class="main-section__text">Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada
+                ipsum placerat. Fusce scelerisque, leo quis auctor lacinia, mauris justo porta enim, eget dictum nisi
+                sapien eget ex. </p>
+
+            <p class="main-section__text"> Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum
+                sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. <span
+                    class="main-section__text--destacado">Praesent tincidunt
+                    convallis</span> ipsum, quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc.
+                Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Nullam tristique pulvinar est at tristique. Vestibulum
+                non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum sit amet ipsum. Pellentesque
+                eu vulputate dolor. Aliquam pretium arcu nec aliquet varius. </p>
+            <div class="main-section__share">
+                <button class="button button--small">Compartir</button>
+                <button class="button button--small">Comentar en Twitter</button>
+            </div>
+        </main>
+        <article class="article">
+            <div class="article__container">
+                <img src="./assets/img/naomi-thai.png" alt="image" class="article__image">
+            </div>
+            <div class="article__info">
+                <span class="article__info--name">Naomi Thai</span><br><br>
+                <span class="article__info--rrss link link--primary">@Naothai</span> <br><br>
+                <span class="article__info--site link link--primary">depelos.com</span>
+            </div>
+            <div class="article__info--bio">
+                <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum
+                    sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent
+                    tincidunt convallis ipsum, quis convallis metus. </p>
+            </div>
+
+
+        </article>
+        <section class="pagination-section">
+            <ul class="pagination">
+                <li class="page-item pagination-section__item--ant">
+                    <a class="page-link pagination-section__link" href="#">Anterior</a>
+                </li>
+                <li class="page-item pagination-section__item"><a class="page-link pagination-section__link" href="#">1</a></li>
+                <li class="page-item pagination-section__item--active" aria-current="page">
+                    <a class="page-link pagination-section__link" href="#">2</a>
+                </li>
+                <li class="page-item pagination-section__item"><a class="page-link pagination-section__link" href="#">3</a></li>
+                <li class="page-item pagination-section__item--sig">
+                    <a class="page-link pagination-section__link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <img src="./assets/img/logo.png" alt="logo" class="footer_logo">
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

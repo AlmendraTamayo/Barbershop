@@ -1,13 +1,19 @@
+// Vendors
+@import 'vendors/bootstrap_v4.6/bootstrap';
 // abstracts
 @import 'abstracts/variables' ;
 @import 'abstracts/mixins' ;
-// Vendors
-@import 'vendors/bootstrap_v.4.6/bootstrap';
+
 // Base
 @import 'base/reset' ;
 @import 'base/typography' ;
 @import 'base/base' ;
 // Layout
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/article';
+/* @import 'layout/pagination-section'; */
 // Components
 @import 'components/buttons' ;
 @import 'components/inputs' ;
