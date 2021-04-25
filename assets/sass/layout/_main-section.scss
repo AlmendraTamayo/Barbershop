@@ -1,5 +1,5 @@
 .main-section{
-    padding: $x-large $xx-large;
+    padding: $x-large $x-large;
 
     &__date{
         font-family: $playfair-display;
@@ -9,5 +9,15 @@
         font-weight: $light;
         line-height: 2rem;
         padding-bottom: 3.5rem;
+        &--destacado{
+            color: $eeire-black;
+        }
+        
     }
+    
 }
+@include cell-phone-view{
+    .main-section__text--destacado{
+        color: $fuzzy-wuzzy;
+    }   
+        }

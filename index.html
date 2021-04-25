@@ -35,7 +35,7 @@
                         <a class="nav-link" href="#">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Blog</a>
+                        <a class="nav-link active navigation__active" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Horas</a>
@@ -102,32 +102,34 @@
                 <span class="article__info--site link link--primary">depelos.com</span>
             </div>
             <div class="article__info--bio">
-                <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum
+                <p class="d-none d-sm-none d-md-block">Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum
                     sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent
                     tincidunt convallis ipsum, quis convallis metus. </p>
             </div>
 
 
         </article>
-        <section class="pagination-section">
-            <ul class="pagination">
-                <li class="page-item pagination-section__item--ant">
-                    <a class="page-link pagination-section__link" href="#">Anterior</a>
-                </li>
-                <li class="page-item pagination-section__item"><a class="page-link pagination-section__link" href="#">1</a></li>
-                <li class="page-item pagination-section__item--active" aria-current="page">
-                    <a class="page-link pagination-section__link" href="#">2</a>
-                </li>
-                <li class="page-item pagination-section__item"><a class="page-link pagination-section__link" href="#">3</a></li>
-                <li class="page-item pagination-section__item--sig">
-                    <a class="page-link pagination-section__link" href="#">Siguiente</a>
-                </li>
-            </ul>
+        <section>
+            <div class="pagination">
+                <div class="pagination-section">
+                    <ul class="paginator">
+                        <li class="paginator__element"><a class="paginator__link" href="#">Anterior</a></li>
+                        <li class="paginator__element"><a class="paginator__link" href="#">1</a></li>
+                        <li class="paginator__element --active">
+                            <span class="paginator__link">2
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="paginator__element"><a class="paginator__link" href="#">3</a></li>
+                        <li class="paginator__element"><a class="paginator__link" href="#">Siguiente</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <footer>
             <div class="footer">
-                <img src="./assets/img/logo.png" alt="logo" class="footer_logo">
+                <img src="./assets/img/logo.png" alt="logo" class="footer__logo">
             </div>
         </footer>
     </div>

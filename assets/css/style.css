@@ -9998,6 +9998,9 @@ body {
   height: auto;
   width: 70px;
 }
+.navigation__active {
+  color: #D76C69 !important;
+}
 
 .header {
   background-image: url("/assets/img/post-image.jpg");
@@ -10017,7 +10020,7 @@ body {
 }
 
 .main-section {
-  padding: 30px 70px;
+  padding: 30px 30px;
 }
 .main-section__date {
   font-family: "Playfair Display", serif;
@@ -10028,7 +10031,15 @@ body {
   line-height: 2rem;
   padding-bottom: 3.5rem;
 }
+.main-section__text--destacado {
+  color: #121619;
+}
 
+@media (min-width: 576px) {
+  .main-section__text--destacado {
+    color: #E56353;
+  }
+}
 .article {
   padding: 30px 70px;
   text-align: left;
@@ -10068,7 +10079,64 @@ body {
   line-height: 2rem;
 }
 
-/* @import 'layout/pagination-section'; */
+.paginator {
+  border-radius: 0.25rem;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.paginator__element:first-child .paginator__link {
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  margin-left: 0;
+}
+.paginator__element:last-child .paginator__link {
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  margin-left: -1px;
+}
+.paginator__element.--active .paginator__link {
+  background-color: #222323;
+  border-color: #222323;
+  color: #fff;
+  z-index: 1;
+}
+.paginator__link {
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  color: #121619;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-left: -1px;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+.paginator__link:hover {
+  color: #6C6E70;
+  text-decoration: none;
+}
+
+.pagination {
+  background-color: #D1D1D1;
+}
+.pagination-section {
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.footer {
+  background-color: #121619;
+  text-align: center;
+}
+.footer__logo {
+  height: auto;
+  width: 140px;
+  padding: 2rem 0;
+}
+
 .button {
   background-color: #6C6E70;
   border-radius: 30px;
@@ -10076,11 +10144,9 @@ body {
 }
 .button--small {
   padding: 9px 16px;
-}
-.button--small {
   font-size: 16px;
 }
-.button--small:hover {
+.button:hover {
   background-color: #D1D1D1;
 }
 

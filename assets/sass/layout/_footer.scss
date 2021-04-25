@@ -1,0 +1,9 @@
+.footer{
+    background-color: $eeire-black;
+    text-align: center;
+    &__logo {
+        height: auto;
+        width: $xxx-large;
+        padding: 2rem 0;
+      }
+}
