@@ -10085,17 +10085,17 @@ body {
   list-style: none;
   padding-left: 0;
 }
-.paginator__element:first-child .paginator__link {
+.paginator__element--anterior .paginator__link {
   border-top-left-radius: 1.25rem;
   border-bottom-left-radius: 1.25rem;
   margin-left: 0;
 }
-.paginator__element:last-child .paginator__link {
+.paginator__element--siguiente .paginator__link {
   border-top-right-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
   margin-left: -1px;
 }
-.paginator__element.--active .paginator__link {
+.paginator__element--active .paginator__link {
   background-color: #222323;
   border-color: #222323;
   color: #fff;

@@ -4,19 +4,19 @@
   list-style: none;
   padding-left: 0;
 
-  &__element:first-child &__link {
+  &__element--anterior .paginator__link {
     border-top-left-radius: 1.25rem;
     border-bottom-left-radius: 1.25rem;
     margin-left: 0;
   }
 
-  &__element:last-child &__link {
+  &__element--siguiente .paginator__link {
     border-top-right-radius: 1.25rem;
     border-bottom-right-radius: 1.25rem;
     margin-left: -1px;
   }
 
-  &__element.--active &__link {
+  &__element--active .paginator__link {
     background-color: $raisin-black;
     border-color: $raisin-black;
     color: $white;
